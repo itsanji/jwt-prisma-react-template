@@ -26,9 +26,6 @@
     "resolveJsonModule": true,
     "baseUrl": "./src",
     "paths": {
-      "@helper": [
-        "utils/helper.ts",
-      ],
       "@middleware/*": [
         "./middleware/*"
       ],
@@ -44,6 +41,7 @@
     "node_modules"
   ],
   "include": [
-    "./src/**/*.ts"
+    "./src/**/*.ts",
+    "./node_modules/.prisma/client/index.d.ts"
   ]
 }
