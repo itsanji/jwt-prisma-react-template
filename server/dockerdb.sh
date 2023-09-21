@@ -21,7 +21,7 @@ docker rm $container_name
 
 # Create Container
 
-if [ ! "$(docker ps -q -f name=project_g)" ]; then
+if [ ! "$(docker ps -q -f name=$container_name)" ]; then
     echo -e "Creating new container...${NC}"
     docker run -d --rm --name $container_name            \
         -e MYSQL_ROOT_PASSWORD=123456                    \
